@@ -1,0 +1,50 @@
+<!-- inventory.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Herramientas</title>
+    <link rel="stylesheet" href="inventario.css">
+    <!-- Cargar FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="back-button">
+                    <i class="fa fa-arrow-left"></i> <!-- Icono de flecha -->
+                </a></li>
+                <li><a href="dashboard.html"></a></li>
+                <li><a href="dashboard.html" class="active"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Título de la sección -->
+    <div class="container">
+        <h1>Inventario de Herramientas</h1>
+        <p>Visualiza y gestiona las herramientas disponibles en tu empresa.</p>
+
+        <!-- Formulario para agregar una nueva herramienta -->
+        <div class="add-tool">
+            <h2>Agregar Nueva Herramienta</h2>
+            <form id="addToolForm">
+                <input type="text" id="toolName" placeholder="Nombre de la herramienta" required>
+                <input type="number" id="toolQuantity" placeholder="Cantidad disponible" required>
+                <button type="submit">Agregar Herramienta</button>
+            </form>
+        </div>
+
+        <!-- Sección de herramientas -->
+        <div class="tools-container" id="toolsContainer">
+            <!-- Aquí se agregarán dinámicamente las herramientas -->
+        </div>
+    </div>
+
+    <script src="inv.js"></script>
+</body>
+</html>

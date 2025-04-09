@@ -1,0 +1,61 @@
+<!-- Dashboard - index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Gestión de Herramientas</title>
+    <link rel="stylesheet" href="dash.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="header">
+            <h1>Gestión de Herramientas e Indumentaria</h1>
+            <p class="subtitle">Control y eficiencia en la entrega de herramientas</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Tarjeta 1 - Herramientas Pendientes -->
+            <div class="card" onclick="location.href='pendientes.html'">
+                <div class="card-icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h2>Herramientas Pendientes</h2>
+                <p>Gestiona las herramientas pendientes de entrega y recepción.</p>
+            </div>
+
+            <!-- Tarjeta 2 - Historial de Entregas -->
+            <div class="card" onclick="location.href='Historial.html'">
+                <div class="card-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h2>Historial de Entregas</h2>
+                <p>Consulta el historial de todas las entregas realizadas y pendientes.</p>
+            </div>
+
+            <!-- Tarjeta 3 - Inventario -->
+            <div class="card" onclick="location.href='inventario.html'">
+                <div class="card-icon">
+                    <i class="fas fa-boxes"></i>
+                </div>
+                <h2>Inventario de Herramientas</h2>
+                <p>Visualiza y gestiona el inventario de herramientas disponibles.</p>
+            </div>
+
+            <!-- Tarjeta 4 - Herramientas Entregadas -->
+            <div class="card" onclick="location.href='reportes.html'">
+                <div class="card-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Reportes</h2>
+                <p>Revisa las herramientas que ya han sido entregadas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

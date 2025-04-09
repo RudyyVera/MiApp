@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Entregas y Devoluciones</title>
+    <link rel="stylesheet" href="historial.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Botón de Regreso -->
+        <button class="back-button" onclick="window.history.back();">
+            &#8592; Regresar
+        </button>
+
+        <h1>Historial de Entregas y Devoluciones</h1>
+
+        <!-- Filtro de búsqueda -->
+        <div class="filter-container">
+            <label for="filter-input">Filtrar por herramienta o persona:</label>
+            <input type="text" id="filter-input" placeholder="Buscar..." class="filter-input">
+        </div>
+
+        <!-- Formulario para agregar o editar -->
+        <div id="form-container">
+            <h2>Agregar/Editar Registro</h2>
+            <form id="delivery-form">
+                <input type="hidden" id="edit-id">
+                <label for="tool-name">Herramienta</label>
+                <input type="text" id="tool-name" required placeholder="Nombre de la herramienta">
+                
+                <label for="person-name">Persona</label>
+                <input type="text" id="person-name" required placeholder="Nombre de la persona">
+                
+                <label for="action-type">Acción Realizada</label>
+                <select id="action-type" required>
+                    <option value="entrega">Entrega</option>
+                    <option value="devolucion">Devolución</option>
+                </select>
+                
+                <button type="submit">Guardar Registro</button>
+            </form>
+        </div>
+
+        <!-- Historial de entregas y devoluciones -->
+        <h2>Historial</h2>
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Herramienta</th>
+                    <th>Persona</th>
+                    <th>Acción Realizada</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los registros se agregan aquí mediante JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="historial.js"></script>
+</body>
+</html>

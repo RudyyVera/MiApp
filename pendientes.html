@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas Pendientes</title>
+    <link rel="stylesheet" href="penientes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título y botón de regreso -->
+        <header>
+            <button class="back-button" onclick="window.history.back();">
+                &#8592; Regresar
+            </button>
+            <h1>Herramientas Pendientes</h1>
+        </header>
+
+        <!-- Filtro de herramientas -->
+        <section id="filter-section">
+            <input type="text" id="tool-search" placeholder="Buscar herramienta..." onkeyup="filterTools()" />
+        </section>
+
+        <!-- Tabla de herramientas pendientes -->
+        <section id="pending-tools-section">
+            <table id="pending-tools-table">
+                <thead>
+                    <tr>
+                        <th>Herramienta</th>
+                        <th>Persona</th>
+                        <th>Fecha de Entrega</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los registros pendientes se agregarán aquí mediante JS -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="pendientes.js"></script>
+</body>
+</html>

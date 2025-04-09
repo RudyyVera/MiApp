@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Herramientas e Indumentaria</title>
+    <link rel="stylesheet" href="reportes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Botón de Regreso -->
+        <button class="back-button" onclick="window.history.back();">
+            &#8592; Regresar
+        </button>
+
+        <h1>Reporte de Herramientas e Indumentaria</h1>
+
+        <div class="report-section">
+            <h2>Reporte de Herramientas</h2>
+            <table id="tool-report-table">
+                <thead>
+                    <tr>
+                        <th>Herramienta</th>
+                        <th>Cantidad en uso</th>
+                        <th>Cantidad en mantenimiento</th>
+                        <th>Disponibles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Martillo</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Alicate</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Destornillador</td>
+                        <td>10</td>
+                        <td>3</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Llave inglesa</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Pinzas</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="report-section">
+            <h2>Reporte de Indumentaria</h2>
+            <table id="clothing-report-table">
+                <thead>
+                    <tr>
+                        <th>Indumentaria</th>
+                        <th>Entregados</th>
+                        <th>En uso</th>
+                        <th>Faltantes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Guantes Anti-estáticos</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Batas de protección</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Mascarillas</td>
+                        <td>40</td>
+                        <td>15</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Botas de seguridad</td>
+                        <td>15</td>
+                        <td>5</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Cascos</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="report-section">
+            <button class="generate-report" onclick="generateReport()">Generar Reporte PDF</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="resportes.js"></script>
+</body>
+</html>
